@@ -1,4 +1,5 @@
-@import "../../../styles/variables.scss";
+@use "sass:color";
+@use "../../../styles/variables.scss" as *;
 
 .cep-checker {
   display: flex;
@@ -43,7 +44,7 @@
       transition: background-color 0.2s ease;
 
       &:hover {
-        background-color: darken($orange, 10%);
+        background-color: color.adjust($orange, $lightness: -10%);
       }
     }
   }
