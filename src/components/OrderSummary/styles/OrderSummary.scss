@@ -1,0 +1,213 @@
+@import "../../../styles/variables.scss";
+
+.order-summary {
+  background-color: $white;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10px;
+  .title {
+    padding: 30px 25px;
+    border-bottom: solid 1px $grayish-blue;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .content {
+    padding: 30px 25px;
+    .empty {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      p {
+        color: $dark-grayish-blue;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .product-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .product-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .product-image {
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+          border-radius: 5px;
+        }
+        .product-item-content {
+          h3 {
+            color: $dark-grayish-blue;
+          }
+          .price {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .product-quantity {
+              color: $dark-grayish-blue;
+            }
+            .product-price {
+              color: $black;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .checkout {
+        background-color: $orange;
+        text-align: center;
+        border-radius: 10px;
+        padding: 15px 10px;
+        font-weight: bold;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .order-summary {
+    .content {
+      .product-content {
+        .product-item {
+          gap: 10px;
+          .product-image {
+            width: 60px;
+            height: 60px;
+          }
+          .product-item-content {
+            h3 {
+              font-size: 14px;
+            }
+            .price {
+              .product-quantity {
+                font-size: 14px;
+              }
+              .product-price {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .checkout {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .order-summary {
+    .content {
+      .product-content {
+        .product-item {
+          gap: 10px;
+          .product-image {
+            width: 60px;
+            height: 60px;
+          }
+          .product-item-content {
+            h3 {
+              font-size: 14px;
+            }
+            .price {
+              .product-quantity {
+                font-size: 14px;
+              }
+              .product-price {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .checkout {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .order-summary {
+    .content {
+      .product-content {
+        .product-item {
+          gap: 10px;
+          .product-image {
+            width: 60px;
+            height: 60px;
+          }
+          .product-item-content {
+            h3 {
+              font-size: 14px;
+            }
+            .price {
+              .product-quantity {
+                font-size: 14px;
+              }
+              .product-price {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .checkout {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .order-summary {
+    .title {
+      padding: 20px 20px;
+    }
+    .content {
+      padding: 20px 20px;
+      .empty {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+      .product-content {
+        .product-item {
+          .product-image {
+            width: 45px;
+            height: 45px;
+          }
+          .product-item-content {
+            h3 {
+              font-size: 12px;
+            }
+            .price {
+              .product-quantity {
+                font-size: 12px;
+              }
+              .product-price {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+        .checkout {
+          padding: 10px 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
